@@ -10,12 +10,12 @@ def hacer_burbuja(lista):
     Devuelve:
         None: La lista es modificada en el lugar (in-place) y se imprime ordenada.
     """
-
-    for i in range(0, lista):
-        for j in range(0, i):
-            if lista[i] < lista[j]:
-                lista[i], [j] = lista[j], lista[i]
-    print(f"{lista}")
+    n = len(lista) 
+    for i in range(n):
+        for j in range(0, n - 1 - i):
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+    print(lista)
 
 
 def main(): 
