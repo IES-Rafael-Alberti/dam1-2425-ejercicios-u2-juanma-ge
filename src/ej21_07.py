@@ -1,5 +1,6 @@
-def pedir_renta():
+def pedir_renta(): 
     return float(input("Introduce tu renta anual: "))
+
 
 def calcular_renta(renta):
     if renta < 10000:
@@ -13,7 +14,6 @@ def calcular_renta(renta):
     else: 
         impositivo = 45
     return impositivo   
-
 
 def main():
     renta = pedir_renta()
